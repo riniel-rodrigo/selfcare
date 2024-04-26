@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Header> */
+
+.section {
+    padding: 0px 50px 0px 50px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoNav {
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.iconsNav,
+.cardIcons {
+    min-width: 100px;
+    color: #5CA720;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.iconsNav .userIcon {
+    font-size: 24px;
+}
+
+.iconsNav i:hover {
+    color: rgba(81, 34, 0, 0.75);
+    cursor: pointer;
+}
+
+.banner1 img {
+    width: 100%;
+}
+
+/* Header/> */
+
+/* main> */
+
+.linha {
+    height: 0.5px;
+    background-color: #a5a1a187;
+}
+
+/* cards> */
+
+.sectionCards {
+    padding: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.card {
+    width: 280px;
+    height: 310px;
+    margin: 0px 0px 30px 0px;
+    border: 1px solid #a5a1a187;
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardDescricao {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card img {
+    border-radius: 7px;
+    width: 100%;
+    height: 186px;
+}
+
+.cardTitulo {
+    font-weight: 600;
+}
+
+.cardPreco {
+    display: flex;
+}
+
+.card .valor {
+    font-weight: 500;
+    color: #5da720;
+    text-decoration: underline;
+}
+
+button {
+    text-decoration: inherit;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.cardDescricao button {
+    color: white;
+    font-weight: 600;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #5da720e3;
+}
+
+.cardFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardIcons {
+    min-width: 50px;
+}
+
+.cardIcons i:hover {
+    color: rgba(81, 34, 0, 0.75);
+    cursor: pointer;
+}
+
+.cardDescricao button:hover {
+    background-color: rgba(81, 34, 0, 0.75);
+}
+
+.card:hover {
+    box-shadow: #17290939 0px 6px 15px 0px;
+    background-color: #5da72007;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.imagem-efeito {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .imagem-efeito::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5da7207a;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .imagem-efeito:hover::before {
+    opacity: 0.5;
+  }
+
+/* cards/> */
+
+/* main/> */
+
+
+/* footer> */
+
+footer {
+    background-color: #F9F9F9;
+}
+
+.sectionFooter {
+    padding: 30px 70px 30px 70px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 200px;
+    max-height:500px;
+}
+
+.foonterInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 150px;
+    max-height:600px;
+}
+
+.foonterInfo a {
+    text-decoration:none;
+    color: #161616;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.foonterInfo a:hover{
+    color: #5CA720;
+}
+
+.newsletter{
+    height:70px;
+    width:30%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.newsletter label{
+    font-weight:600;
+}
+
+.inputNews {
+    display: flex;
+}
+
+.inputNews input{
+    padding:10px;
+    width:100%;
+}
+
+
+.inputNews button {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    width: 110px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 0px 5px 5px 0px;
+    background: #5CA720;
+}
+
+.inputNews button:hover{
+    background-color:rgba(81, 34, 0, 0.75);
+}
+
+/* footer/> */
+
+/* medias */
+
+@media (max-width: 991px) {
+
+    .card img {
+        height: 150px;
+    }
+
+
+    .cardIcons {
+        min-width: 45px;
+    }
+
+    .section {
+        padding: 0px 20px 0px 20px;
+        min-height: 50px;
+    }
+
+    .card {
+        font-size: 15px;
+        width: 220px;
+        height: 270px;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .card button {
+        font-size: 12px;
+        width: 80px;
+        height: 30px;
+    }
+
+    .sectionCards {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .newsletter{
+        padding-top:30px;
+        width:100%;
+    }
+
+    .card img {
+        height: 119px !important;
+    }
+
+    .sectionCards {
+        margin-bottom:20px;
+    }
+
+    .sectionFooter{ 
+        width:100%;
+    }
+
+    .card {
+        font-size: 12px;
+        width: 180px;
+        height: 210px;
+        margin: 25px 0px 0px 0px;
+    }
+
+    .card button {
+        font-size: 10px;
+        width: 72px;
+        height: 27px;
+    }
+
+    .card i {
+        font-size: 17px;
+    }
+
+    .cardIcons {
+        min-width: 40px;
+    }
+
+
+    .section {
+        padding: 0px 10px 0px 10px;
+        min-height: 50px;
+    }
+
+    .iconsNav,
+    .logoNav {
+        min-width: 60px;
+    }
+
+    .logoNav,
+    .iconsNav {
+        font-size: 12px;
+    }
+
+    .iconsNav .userIcon {
+        font-size: 15.5px;
+    }
+
+    .sectionProdutos {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .sectionFooter{
+        padding: 30px 20px 30px 20px;
+    }
+
+    .card img {
+        height: 90px !important;
+    }
+
+    .section {
+        gap:10px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .card {
+        font-size: 12px;
+        width: 130px;
+        height: 195px;
+    }
+
+    .cardIcons {
+        min-width: 36px;
+    }
+
+    .card button{
+        width: 60px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .card .cardIcons{
+        min-width: 39px;
+    }
+
+    .card button{
+        width: 80px;
+        height: 30px;
+    }
+
+    .section {
+        padding: 0px 30px 0px 30px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .sectionFooter{
+        padding:10px;
+        font-size:12px !important;
+    }
+
+    .sectionFooter a{
+        font-size:14px !important;
+    }
+}
